@@ -1,6 +1,6 @@
 services:
   php:
-    build: .
+    image: adamcyliumdev/prestashop8.1:v0.1
     container_name: php
     restart: unless-stopped
     depends_on:
@@ -36,10 +36,3 @@ services:
       - mariadb
     ports:
       - "8081:80"
-
-volumes:
-  mariadb_data:
-
-networks:
-  default:
-    driver: bridge
