@@ -36,3 +36,10 @@ services:
       - mariadb
     ports:
       - "8081:80"
+
+volumes:
+  mariadb_data:
+
+networks:
+  default:
+    driver: bridge
