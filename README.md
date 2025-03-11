@@ -7,6 +7,7 @@ Download the desired version of PrestaShop from the [official releases page](htt
 
 ### 2. Extract the PrestaShop Files
 Unzip the `prestashop.zip` file (found inside the downloaded `prestashop_x.x.x.zip`) directly into the project’s root directory.
+
 Desired result: a folder named "prestashop" (important) at project's root, containing the Prestashop installation files.
 
 ### 3. Configure PHP Settings
@@ -19,6 +20,7 @@ Verify that the necessary folders and files have the correct permissions:
 
 ### 5. Ensure Inherited Ownership
 Make sure that new files created within the PrestaShop directory inherit the correct group ownership (`www-data`).
+
 This can be achieved by applying the proper permissions and ownership rules.
 
 ### 6. Build and Start Docker Containers
@@ -28,5 +30,7 @@ Run the Docker setup:
 
 ### 7. Install PrestaShop
 Once the containers are running, access PrestaShop by navigating to [localhost:8080](http://localhost:8080) in your web browser.
+
 Follow the on-screen instructions to complete the PrestaShop installation.
+
 Note: when you're asked for database credentials, set "mariadb" as the host instead of the default localhost, since PrestaShop is running inside a container and must connect to the database container.
